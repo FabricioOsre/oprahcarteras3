@@ -1,0 +1,87 @@
+footer{
+    .contenedor2{
+        width: 100%;
+        height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        ".... .... oprah-foo oprah-foo oprah-foo .... ...."
+        "menu-ppal2 menu-ppal2 menu-ppal2 menu-ppal2 menu-ppal2 menu-ppal2 menu-ppal2"
+        "seguinos seguinos seguinos seguinos seguinos seguinos seguinos"
+        "redes_foo redes_foo redes_foo redes_foo redes_foo redes_foo redes_foo"
+        ".... .... datos_foo datos_foo datos_foo .... ...."
+        ;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(66, 18, 18);
+    }
+    .oprah-foo{
+        grid-area: oprah-foo;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .menu-ppal2{
+        grid-area: menu-ppal2;
+        .nav-footer{
+            ul{
+                display: flex;
+                justify-content: center;
+    
+                li{
+                    width: 100px;
+                    display: flex;
+                    display: inline-block;
+                    font-size: 12px;
+                    text-align: center;
+                    border-left: 1px solid ;
+                }
+            }
+        }
+    }
+    .redes_foo{
+        grid-area:redes_foo;
+        background-color: rgba(112, 67, 105, 0.466);
+        text-align: center;
+
+        h3{
+            font-size: 2rem;
+        }
+    }
+        .seguinos{
+            grid-area: seguinos;
+            display: flex;
+            justify-content: center; 
+            color: rgb(87, 85, 85);  
+    
+            .redes{
+                a{
+                display:flex;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                }
+            }
+            img{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:15%;
+                padding-right: 5px;
+                padding-top: 10px;
+                padding-left: 30%
+            }
+        }
+        .datos_foo{
+            grid-area: datos_foo;    
+            p{
+                text-align: center;
+                margin: 0 auto;
+                font-size: 15px;
+                padding-top: 15px;
+                width: 80%;
+            }
+        }
+    }

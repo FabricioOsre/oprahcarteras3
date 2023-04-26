@@ -1,0 +1,136 @@
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, autofit);
+    grid-template-areas: 
+    "menu-ppal menu-ppal menu-ppal menu-ppal menu-ppal menu-ppal menu-ppal"
+    "slide slide slide slide slide slide slide"
+    ".... .... filosofia filosofia filosofia .... ...."
+    "imgsecon imgsecon imgsecon imgsecon imgsecon imgsecon imgsecon"
+    ".... .... parrafo parrafo parrafo .... ...."
+    "registrarme registrarme registrarme registrarme registrarme registrarme registrarme"
+    ".... .... descarga-app descarga-app descarga-app .... ...."
+    ;
+}
+.menu-ppal{
+    grid-area: menu-ppal;
+    width: 100%;
+    height: 6%;
+
+    .container-fluid{
+        width: 100%;
+        height: 100%
+    }
+
+    .bg-body-tertiary{
+        --bs-bg-opacity: 0;
+    }
+}
+
+.slide{
+    grid-area: slide;
+    background-color: rgb(255, 255, 255);
+
+    h1{
+        display:flex;
+        position: absolute;   
+        color: rgb(236, 233, 224);
+        text-shadow: 2px 1px 2px rgb(34, 29, 14);
+        font-size: clamp(1em, 4vw, 4em);
+        background-color: transparent;
+        top: 80%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+}
+
+.filosofia{
+    grid-area: filosofia;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.imgsecon{
+    grid-area: imgsecon;
+}
+.parrafo{
+    grid-area: parrafo;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.registrarme{
+    grid-area: registrarme;
+    text-align: center;
+    padding: 20px;
+
+    .btn-primary{
+        --bs-btn-bg: #cbc98b;
+        --bs-btn-color: #333333;
+        --bs-btn-border-color: #b0b778;
+        --bs-btn-hover-bg: #918b5d;
+        --bs-btn-active-bg: #949561;
+        --bs-btn-hover-border-color: #afafaf;
+        --bs-btn-active-border-color: #ffffff;
+    }
+}
+
+.descarga-app{
+    grid-area: descarga-app;
+    text-align: center;
+
+    h3{
+        text-align: center;
+    }
+
+    p{
+        grid-area: parrafo;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    img{
+        width: 17%;
+        display: inline-block;
+        align-items: center;
+        
+    }
+    p{ 
+        grid-area: parrafo;
+    }
+}
+.daniela{
+    display: flex;
+    width: 90%;
+
+    img{
+        width: 30%;
+        height:fit-content;
+    }
+    h3{
+        padding-top: 20px;
+    }
+    p{
+        padding: 40px;
+    }
+}
+.tarjeta{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    color: rgb(87, 85, 85);
+    }

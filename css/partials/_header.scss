@@ -1,0 +1,27 @@
+header{
+
+    .contenedor1{
+        display: flex;
+        width: 95%;
+    }
+    
+    .icono-red img{
+    display: flex;
+    justify-content:space-evenly;
+    transform: translate(100%, 40%);
+    width: 2.5rem;
+    margin-top: 10px;
+    opacity: 40%;
+    padding: 5px;
+    }
+    
+    .icono-red img:hover{
+        opacity: 85%;
+    }
+}
+#logo {
+    display: flex;
+    width: 15%;
+    min-width: 70px;
+    height: 100%;
+}

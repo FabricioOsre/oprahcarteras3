@@ -1,0 +1,17 @@
+.card-group{
+    gap: 10px;
+    padding: 10px;
+
+    .card{
+        img{
+            opacity: .8;
+            transition: 0.3s ease-in;
+
+        &:hover {
+            width: 102%;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
+}
